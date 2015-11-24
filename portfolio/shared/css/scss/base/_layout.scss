@@ -1,0 +1,33 @@
+// ----------------------------------------
+// +base
+// ----------------------------------------
+body {
+  position: relative;
+  background: $bg-gray;
+  color: $color-black;
+  font-family: arial, sans-serif;
+  font-size: $base-font-size;
+  line-height: 1.6;
+}
+
+.main {
+  margin: 0 0 0 300px;
+  overflow: hidden;
+  @include sp($point-sp) {
+    margin: 0 10px;
+    padding: 60px 0 0;
+  }
+}
+
+.section {
+  margin: 20px 0;
+  position: relative;
+}
+
+.content-box {
+  margin: 40px 0 0;
+}
+
+.is-disabled {
+  display: none;
+}

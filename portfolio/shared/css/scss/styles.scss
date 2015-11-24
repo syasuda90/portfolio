@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* +base style
+-------------------------------------------------- */
+@import
+"base/reset",
+"base/variables",
+"base/layout";
+
+/* +components
+-------------------------------------------------- */
+@import
+"components/header";
+
+/* +modules
+-------------------------------------------------- */
+@import
+"modules/title",
+"modules/text",
+"modules/item";

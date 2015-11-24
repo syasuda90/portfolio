@@ -1,0 +1,30 @@
+// ----------------------------------------
+// +mixins
+// ----------------------------------------
+$point-sp: 640px;
+@mixin sp($point-sp) {
+  @media screen and (max-width: $point-sp) { @content; }
+}
+
+// ----------------------------------------
+// +settings
+// ----------------------------------------
+$base-font-size      : 14px;
+
+$font-size-s         : 12px;
+$font-size-m         : 16px;
+$font-size-l         : 18px;
+$font-size-ll        : 32px;
+
+$bg-white            : #fff;
+$bg-gray             : #555;
+$bg-black            : #333;
+
+$border-white        : #fff;
+$border-gray         : #ccc;
+
+$color-white         : #fff;
+$color-black         : #333;
+
+$header-z-index      : 100;
+$header-menu-z-index : 200;

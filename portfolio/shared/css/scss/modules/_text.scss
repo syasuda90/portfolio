@@ -1,0 +1,22 @@
+// ----------------------------------------
+// +profile
+// ----------------------------------------
+.profile-title,
+.profile-text {
+  display: inline-block;
+  margin: 0 12px 20px 0;
+  color: $color-white;
+  vertical-align: top;
+  line-height: 1.8;
+  @include sp($point-sp) {
+    margin-bottom: 8px;
+  }
+}
+.profile-title {
+  width: 5em;
+  font-size: $font-size-l;
+}
+
+.profile-text {
+  font-size: $font-size-m;
+}

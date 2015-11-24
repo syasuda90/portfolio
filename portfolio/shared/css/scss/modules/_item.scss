@@ -1,0 +1,66 @@
+// ----------------------------------------
+// +item
+// ----------------------------------------
+.items {
+  margin: 0 40px 0 -20px;
+  letter-spacing: -.40em;
+  @include sp($point-sp) {
+    margin: 0;
+  }
+}
+
+.item {
+  display: inline-block;
+  width: 33.3%;
+  padding: 20px 0 0 20px;
+  box-sizing: border-box;
+  letter-spacing: normal;
+  vertical-align: top;
+  @include sp($point-sp) {
+    width: 100%;
+    padding: 10px 0 0;
+  }
+}
+
+.item-link {
+  display: block;
+  min-height: 420px;
+  padding: 12px 8px;
+  border-radius: 4px;
+  border: 1px solid $border-gray;
+  background: $bg-white;
+  box-sizing: border-box;
+  color: $color-black;
+  text-decoration: none;
+  opacity: 0.6;
+  @include sp($point-sp) {
+    min-height: 0;
+    opacity: 1;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.item-title {
+  font-weight: bold;
+}
+
+.item-image {
+  margin: 8px 0 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.item-text {
+  margin: 8px 0 0;
+  + .item-text {
+    margin-top: 4px;
+  }
+  &.is-indent_03 {
+    text-indent: -3em;
+    margin-left: 3em;
+  }
+}
